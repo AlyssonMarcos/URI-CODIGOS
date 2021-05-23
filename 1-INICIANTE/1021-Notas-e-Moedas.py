@@ -15,7 +15,7 @@ for note in notes:
 for coin in coins:
     amountCoins[coin] = int(noteValue / float(coin))
     # A função round arredonda para cima e resolve o nosso problema de subtração.
-    # exemplo: 0.3 - 0.1 = 0.19999999999999998 ao inves de 0.2s
+    # exemplo: 0.3 - 0.1 = 0.19999999999999998 ao inves de 0.2
     noteValue = round(noteValue - amountCoins[coin] * float(coin), 2)
 
 print('NOTAS:')
